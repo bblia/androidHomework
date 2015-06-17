@@ -34,8 +34,6 @@ public class MapFragment extends Fragment {
      * available.
      */
 
-    private static Double latitude, longitude;
-    private Event[] mEvents;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -80,7 +78,6 @@ public class MapFragment extends Fragment {
     }
 
     public void setEvents(Event[] events) {
-        this.mEvents = events;
         mMap.clear();
         addMarkersToMap(events);
     }

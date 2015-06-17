@@ -48,19 +48,13 @@ public class SearchActivity extends AppCompatActivity implements AppCompatCallba
     private EventListFragment mListFrag;
     private SearchService mSearchService;
 
-    LocationManager locManager;
-    LocationListener locListener;
 
     protected GoogleApiClient mGoogleApiClient;
-    private GoogleMap mMap;
     private TextView mSearchArea;
     private ImageButton mViewToggle;
     private Fragment mCurrentFrag;
     private Event[] mEvents;
     private String mKeyword = "";
-    private Place mCurrentPlace;
-    private Double mCurrentLat;
-    private Double mCurrentLng;
     private Location mLastLocation;
     private boolean myLocation;
     private EventLocation mSelectedEventLocation;

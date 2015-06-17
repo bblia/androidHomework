@@ -11,10 +11,8 @@ public class SearchEvents {
 
     public static class LoadSearchResultsEvent {
         private String query;
-        private String radius;
         private Double latitude;
         private Double longitude;
-        private String token;
         private boolean myLocation;
         private String address;
 
