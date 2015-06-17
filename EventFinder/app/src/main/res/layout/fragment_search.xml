@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:elevation="3dp"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1.00"
+            android:fadingEdge="vertical"
+            >
+
+            <EditText
+                android:background="#FFFFFF"
+                android:paddingTop="6dp"
+                android:paddingLeft="10dp"
+                android:paddingBottom="6dp"
+                android:id="@+id/keyword_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Enter a keyword"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/divider"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:background="#FFFFFF">
+
+            <AutoCompleteTextView
+                android:id="@+id/atv_places"
+                android:paddingLeft="10dp"
+                android:color="#FFFFFF"
+                android:singleLine="true"
+                android:completionThreshold="1"
+                android:ellipsize="end"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:layout_alignParentTop="true"
+                android:hint="@string/enter_a_location"
+                android:layout_weight="1.00" />
+
+                <ImageButton
+                    android:id="@+id/currentLocationIcon"
+                    android:layout_margin="7dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_my_location_white_18dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/divider"/>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_icon"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            >
+
+        <ImageButton
+            android:id="@+id/search_button"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:background="@drawable/ic_search_white_36dp"
+            android:layout_gravity="center"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
